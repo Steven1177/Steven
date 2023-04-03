@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+  width: 100%;
+  height: auto;
+  font-family: Lobster, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(2, 5, 29);
+  text-align: center;
+}
+h1:hover {
+  color: rgb(105, 7, 4);
+  cursor: pointer;
+  font-size: 80px;
+
+}
+div {
+  width: 100%;
+  height: 800px;
+  position: relative;
+    
+}
+span {
+    margin: 200px auto;
+    width: 202px;
+    height: 199px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  p{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sertsa {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    animation: beating 1s infinite;
+    
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -86px;
+    right: 0;
+    background-color: red;
+    border-radius: 50%;
+    
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 86px;
+    top: 0;
+    background-color: red;
+    border-radius: 50%;
+  }
+  @keyframes beating {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    75% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+.text {
+  margin: auto;
+  width: 500px;
+  height: auto;
+  background: linear-gradient(45deg, hotpink, red, blue);
+  border-radius: 25%;
+}
+img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+p {
+  font-family: oswald;
+  font-size: 22px;
+  color: white;
+}
+p:hover {
+  text-transform: uppercase;
+  text-shadow: 10px;
+  cursor: pointer;
+  transition: 3s;
+  color: rgb(39, 7, 68);
+}
